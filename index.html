@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Personalized Eid Wish</title>
+</head>
+<body>
+    <div class="card">
+        <div class="moon">🌙</div>
+        <h1>Eid Mubarak!</h1>
+        
+        <input type="text" id="nameInput" placeholder="Enter your name...">
+        <button onclick="showGreeting()">Get Wish</button>
+        
+        <div id="greeting"></div>
+    </div>
+
+    <script>
+        function showGreeting() {
+            const name = document.getElementById('nameInput').value;
+            const greeting = document.getElementById('greeting');
+            
+            greeting.innerHTML = `✨ ${name}, may your Eid be filled with joy and blessings! ✨`;
+            greeting.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

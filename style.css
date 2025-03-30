@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff5f5;
+    font-family: 'Comic Sans MS', cursive;
+    overflow: hidden;
+}
+.card {
+    width: 300px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(255, 138, 138, 0.3);
+}
+.moon {
+    font-size: 80px;
+    margin: 10px;
+    animation: bounce 2s infinite;
+}
+h1 {
+    color: #d23369;
+    text-shadow: 2px 2px 0px rgba(255,255,255,0.5);
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px dashed #d23369;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+button {
+    background: #d23369;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS';
+    transition: transform 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+#greeting {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
